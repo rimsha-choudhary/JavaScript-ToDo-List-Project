@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{ 
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    height:100%;
+  }
+  
+  body{
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width: 100vw !important;
+    line-height: 1.6;
+    /* //background-color:  rgb(255, 254, 251); */
+    background-color: #ccc;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  /* Header Section*/
+  header{
+    z-index: 100;
+    position:fixed; 
+    width:100%; 
+    height:100px; 
+  }
+  header a{
+    color:black;
+    display:inline-block; 
+    padding:0px 30px; 
+    height:60px;
+    line-height:60px; 
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase; 
+    letter-spacing:2px; 
+    font-weight:700;
+  }
+  /* Navigation Section*/
+  .nav {             
+    width: 100%;
+    height: 70px;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+  }
+  .nav > .nav-header {
+    display: inline;
+  }
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  .nav > .nav-links {
+    display: inline;
+    font-size: 18px;
+  }
+  .nav-links  {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Optima';
+    font-weight:normal;
+  }
+  .nav > .nav-header > .nav-title > .logo{
+    display: inline-block;
+  }
+  .nav-links .home{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  /*Background Video*/
+  .video-section{
+    position: relative;
+    overflow: hidden;
+    height: 700px;
+  }
+  .video{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    clip-path: inset(1px 0px 100px 0px);
+    opacity: 0.5;
+  }
+  .video-section .overlay{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 1;
+  }
+  #nav-todo{
+    margin-left: 115px;
+    width: 149px;
+    height: 45px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    background-color: whitesmoke;
+    font-size: medium;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* Organize */
+  h1{
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-weight: 1000;
+  }
+
+/* This is container section */
+.container{
+  background-color: rgb(238, 233, 233);
+  max-width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 4.6rem;
+  padding-left: 4.6rem;
+  font-family:'Optima';
+  font-weight:normal;
+}
+
+/* Section Features */
+.section-features{
+  height: 100px;
+  display: inline-block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+}
+.section-features > h1{
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 300;  
+  margin-bottom: 5px;
+}
+.underline-features {
+  width: 450px;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 auto 1.5px auto;
+}
+
+/* Section About Us */
+  .section-aboutus{
+    height: 330px;
+    display: inline-block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto 
+  }
+  .section-aboutus > h1{
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 300;
+    padding-top: 20px; 
+    margin-bottom: 5px;
+  }
+  .section-aboutus > h2{
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: 300;
+    padding-top: 40px;
+  }
+  .section-aboutus > .about-description{
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+  p{
+    font-size: 1.1rem;
+    padding-top: 6px;
+    text-align: justify;
+  }
+  .underline-aboutus {
+    width: 270px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0 auto 1.5px auto;
+  }
+
+/* Footer Section*/
+  .footer{
+    padding-top: 0rem; 
+    background-color: whitesmoke; 
+    font-family:'Optima';
+    font-weight:normal;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .footer-copyright{
+    background-color: whitesmoke; 
+  }
+  .footer-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .5rem;
+  }
+  .footer-logo{
+    width: 100px;
+    padding-top: 6px;
+    vertical-align: middle;
+  }
+  .footer-links > a > img{
+    text-decoration: none;
+    color: black;
+    margin: 0 .5rem;
+  }
+  .footer-links > h4 {
+    margin-bottom: .2rem;
+  }
+  .twitter {
+    width: 38px ;
+  }
+  .instagram{
+    width: 35px ;
+  }
+  .facebook{
+    width: 18px;
+  }
+  
+/*To-do list page*/
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(116, 84, 84, 0.1);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* container */
+.todo-container{
+    padding:10px;
+    margin:0 auto;
+}
+
+/* header*/
+.header{
+  width: 1346px;
+  height:224px;
+  background-color: rgb(221 223 224);
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+.bg-image{
+  width: 492px;
+  height:244px;
+  background-image: url('../images/list.jpg'); 
+  /* Image reference -  https://www.pexels.com/photo/brown-wooden-scrabble-tiles-on-white-surface-10607624/ */
+  background-repeat: no-repeat;
+  background-size: 100% ;
+  position: relative;
+  padding-bottom: 20px;
+  margin-left: 409px; 
+}
+ul #list{
+  padding: 0;
+    margin: 0;
+    list-style: none;
+    /* display: flex; */
+}
+.clear{
+  width : 30px;
+  height: 30px;
+  position: absolute;
+  right:28px;
+  top: 28px;
+}
+.clear i{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+.clear i:hover{
+  cursor: pointer;
+  text-shadow: 1px 3px 5px #000;
+  transform: rotate(45deg);
+}
+#date{
+  position: absolute;
+  bottom: 28px;
+  left: 40px;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+}
+
+/* content */
+.content{
+  width: 1346px;
+  height: 350px;
+  max-height:350px;
+  background-color: #FFF;
+  overflow: auto;
+}
+.content::-webkit-scrollbar { 
+  display: none; 
+}
+.content ul{
+  padding:0;
+  margin:0;
+}
+.item{
+  width:1346px;
+  height: 45px;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item i.co{
+  position: absolute;
+  font-size: 25px;
+  padding-left:5px;
+  left:15px;
+  top:10px;
+}
+.item i.co:hover{
+  cursor: pointer;
+}
+.fa-check-circle{
+  color:#6eb200;
+}
+.item p.text{
+  position: absolute;
+  padding:0;
+  margin:0;
+  font-size: 20px;
+  left:50px;
+  top:5px;
+  background-color: #FFF;
+  max-width:285px;
+}
+.lineThrough{
+  text-decoration: line-through;
+  color : #ccc;
+}
+.item i.de{
+  position: absolute;
+  font-size: 25px;
+  right:15px;
+  top:10px;
+}
+.item i.de:hover{
+  color:#af0000;
+  cursor: pointer;
+}
+/* add item*/
+.add-to-do{
+  position: relative;
+  width: 1326px;
+  height:40px;
+  background-color: #FFF;
+  padding: 10px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.add-to-do i{
+  position: absolute;
+  font-size: 40px;
+  color: #000;
+}
+.add-to-do input{
+  position: absolute;
+  left: 50px;
+  height: 40px;
+  width: 1277px;
+  background-color: rgb(221 223 224);
+  border: none;
+  font-size: 20px;
+  padding-left:10px;
+}
+.add-to-do input::-webkit-input-placeholder { 
+  color: #878787;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+
+/* Font Family Optima, Downloaded from - https://www.cufonfonts.com/font/optima */
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima'), url('font-optima/OPTIMA.woff') format('woff');
+}
+@font-face {
+  font-family: 'Optima Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima Italic'), url('font-optima/Optima_Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Optima Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima Medium'), url('font-optima/Optima\ Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Optima Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima Bold'), url('font-optima/OPTIMA_B.woff') format('woff');
+}
+
+
+
+
+
+
